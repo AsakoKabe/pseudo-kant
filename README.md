@@ -31,8 +31,8 @@
 Почитать про параметры нейронной сети для генерации текста - https://huggingface.co/blog/how-to-generate
 
 # Пример работы
-![](https://raw.githubusercontent.com/AsakoKabe/pseudo-kant/master/images/demo1.png)
-![](https://raw.githubusercontent.com/AsakoKabe/pseudo-kant/master/images/demo2.png)
-![](https://raw.githubusercontent.com/AsakoKabe/pseudo-kant/master/images/demo3.png)
-![](https://raw.githubusercontent.com/AsakoKabe/pseudo-kant/master/images/demo4.png)
+![](https://raw.githubusercontent.com/AsakoKabe/pseudo-kant/dev/images/demo1.png)
+![](https://raw.githubusercontent.com/AsakoKabe/pseudo-kant/dev/images/demo2.png)
+![](https://raw.githubusercontent.com/AsakoKabe/pseudo-kant/de/images/demo3.png)
+![](https://raw.githubusercontent.com/AsakoKabe/pseudo-kant/dev/images/demo4.png)
 
