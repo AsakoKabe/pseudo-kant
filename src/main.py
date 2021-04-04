@@ -11,7 +11,7 @@ model: NeuralKant = NeuralKant()
 
 keyboard = create_keyboard()
 markup_settings = create_markup_setting()
-markup_top_p, top_p_value= create_markup_top_p()
+markup_top_p, top_p_value = create_markup_top_p()
 markup_top_k, top_k_value = create_markup_top_k()
 markup_temperature, temperature_value = create_markup_temperature()
 markup_max_length, max_length_value = create_markup_max_length()
