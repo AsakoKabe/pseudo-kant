@@ -56,7 +56,6 @@ class NeuralKant:
                  top_p: float = 0.95, temperature: float = 1) -> None:
         self.__tokenizer: GPT2Tokenizer = GPT2Tokenizer.from_pretrained("../models/essays")
         self.__model: GPT2LMHeadModel = GPT2LMHeadModel.from_pretrained("../models/essays")
-        self.__model.cuda()
         self.__mode = False
         self.__max_length = max_length
         self.__repetition_penalty = repetition_penalty
@@ -66,7 +65,7 @@ class NeuralKant:
 
     def generate_text(self, text: str) -> str:
         input_token: Tensor = self.__tokenizer.encode(text, return_tensors="pt", )
-        output_text: Tensor = self.__model.generate(input_token.cuda(), max_length=self.__max_length, do_sample=True,
+        output_text: Tensor = self.__model.generate(input_token, max_length=self.__max_length, do_sample=True,
                                                     repetition_penalty=self.__repetition_penalty, top_k=self.__top_k,
                                                     top_p=self.__top_p, temperature=self.__temperature)
         output_text: str = self.__tokenizer.decode(output_text[0]).replace('\xa0—', ' ').replace('\n', ' ')
